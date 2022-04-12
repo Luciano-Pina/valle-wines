@@ -1,0 +1,393 @@
+body{
+    background-color:rgb(255, 252, 240);    
+}
+.title-principal{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    width: 100%;
+    font-size: 60px;
+    font-family: 'Righteous', cursive;
+}
+
+.logo{
+    border: 2px solid orchid;
+    padding: 1%;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.user__options{
+    position:absolute;
+    top: 20px;
+    right: 50px;
+}
+.user__text{
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.main-menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-items: center;
+}
+
+a:link {
+    text-decoration: none;
+  }
+  
+  a:visited {
+    text-decoration: none;    
+  }
+  
+  a:hover {
+    text-decoration: none;
+  }
+  
+  a:active {
+    text-decoration: none;
+  }
+
+ul li{
+    list-style-type: none;
+    display: inline;    
+    border: 2px solid olive;
+    background-color:rgb(187, 204, 153);
+    margin: 50px;
+    margin-bottom: 80%;
+    text-align: justify;
+    font-size: large;
+}
+
+.div{
+    background-color:rgb(187, 204, 153);
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    margin: 0%;
+}
+
+.banner{
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 5%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-image: url(../images/banner-montana.jpg);
+    height: 480px;
+    margin-top: 100px;
+}
+
+.p__arrangement{       
+    position: relative;
+    border:30%;
+    color: rgb(71, 45,48);    
+    width: 700px;
+    height: 300px;
+    font-size: 35px;
+    font-style: oblique;
+    left: 100px;    
+}
+
+.titles{
+    padding: 10px;
+    margin: 20px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 32px;
+    text-decoration: underline double;
+}
+
+.title__position{
+    position: relative;
+    width: 50%;
+    left: 300px;
+}
+
+.separation{    
+    height: 150px;
+    margin-top: 150px;
+}
+
+.button__deco{
+    position: relative;
+    width: 180px;
+    left: 310px;
+    text-transform: uppercase;    
+    background-color: rgb(255, 255, 168);
+    color: rgb(71, 45,48);
+    font-weight: bolder;
+}
+
+.img__position{
+    display: flex;
+    align-items: flex-start;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
+    background-image: url(../images/copa-vino.jpg);
+    height: 480px;
+    width: auto;    
+}
+
+footer {   
+    height: 400px;
+    width: 100%;
+    margin-top: 20px;
+    background-color:rgb(187, 204, 153)    
+}
+
+.padre-disclaimer{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;    
+}
+
+.warning{
+    width: 25%;
+
+}
+
+.logo-footer{
+    border: 2px solid orchid;
+    padding: 1%;
+    width: 20px;
+    height: 20px;
+    display: flex;    
+    justify-content: space-around; 
+    margin-left: 95%;
+}
+
+.rights{
+    display: flex;
+    flex-direction: column;  
+    text-align: center;
+}
+
+.socialmedia-icons{
+    margin: 0%;    
+}
+
+.socialmedia-box{
+    text-align: end;
+}
+/* ACA EMPIEZA LOS GRIDS Y MEDIA QUERIES PARA LA ENTREGA */
+#order{
+    display: grid;
+    grid-template-areas: 
+    "header header"
+    "banner banner"
+    "welcome image"
+    "product link"
+    "footer footer";
+    grid-template-rows: auto auto auto auto auto;
+    grid-template-columns: 50% 50%;
+    row-gap: 30px;
+}
+
+header{
+    grid-area: header;
+}
+div#banner{
+    grid-area: banner;
+}
+div#welcome{
+    grid-area: welcome;
+}
+div#image{
+    grid-area: image;
+}
+div#product{
+    grid-area: product;
+    display: flex;
+    flex-direction: column;    
+    align-items: center;
+}
+div#link{
+    grid-area: link;
+    display: flex;    
+    align-items: center;
+    width: 400px;
+}
+footer{
+    grid-area: footer;
+}
+
+
+@media only screen and (max-width:480px){    
+    #order {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-areas: 
+        "header"
+        "banner"
+        "welcome"
+        "image"
+        "product"
+        "link"
+        "footer";
+    }
+}
+
+@media only screen and (max-width:800px){
+    #order{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: 
+        "header header"
+        "banner banner"
+        "welcome image"
+        "product link"
+        "footer footer";
+    }    
+}
+
+/* para ABOUT US */
+.div{
+    background-color:rgb(187, 204, 153) ;  
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    margin: 0%;
+}
+
+.img-banner{
+    display: flex;
+    justify-content: center;
+    margin: 50px;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: auto 60%;
+    height: 600px;
+}
+
+.video-cell{
+    display: flex;
+    justify-content: space-evenly;    
+    flex-direction: column;
+    padding-left: 200px;
+    padding-bottom: 100px;   
+}
+
+.title-secondary{
+    display: flex;    
+    width: 100%;
+    font-size: 32px;
+    font-family: 'Righteous', cursive;
+    text-decoration: underline double;    
+}
+
+.text{
+    display: flex;    
+    align-items: center;
+    flex-wrap: wrap; 
+    width: 700px;
+    font-size: 20px;
+    padding-left: 20%;
+}
+
+.mailing-list{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.title-terciary{
+    width: 100%;
+    font-size: 20px;
+    font-family: 'Righteous', cursive;
+    text-decoration: underline;
+      
+}
+
+/* para WINE KNOWLEDGE */
+
+.grid{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    gap: 2%;
+}
+
+.subhead{
+    margin-left: 5%;
+    margin-right: 25%;    
+    width:90%;
+    font-family: 'Righteous', cursive;
+    font-size: 18px; 
+    background-color: rgb(238, 238, 138);   
+}
+
+.div-paragraph{
+    font-family: 'Righteous', cursive;
+    font-size: 18px;
+}
+
+/* para CONTACT */
+
+.flex{
+    display: flex;
+    flex-direction: column;    
+}
+
+.section-img{
+    background-image:url(../images/banner-background.jpg);
+    background-repeat:no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.flex-div{
+    display: flex;    
+    justify-content:space-evenly;
+    padding-inline: 5px;    
+}
+
+.title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Righteous', cursive;
+    font-size: 18px;
+}
+
+.font-style{
+    font-family: 'Righteous', cursive;
+    font-size: 16px;
+    text-decoration: underline wavy;
+}
+
+.font-style2{
+    font-family: 'Righteous', cursive;
+    font-size: 14px;    
+}
+
+/* para SHOP */
+
+.product-header{
+    font-family: 'Righteous', cursive;
+    font-size: 24px;
+    text-decoration: overline underline wavy;
+    margin-bottom: 4rem;
+    margin-top: 4rem;
+    padding: 16px;
+    text-align: center;
+    padding: 10px;  
+}
+
+.product-list{
+    display: flex;
+    justify-content: center;    
+    font-size: 16px; 
+    padding: 1px;
+}
+
+.no-stock{
+    text-decoration: line-through;
+}
