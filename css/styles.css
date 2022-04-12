@@ -17,8 +17,26 @@ body{
     height: 20px;
     display: flex;
     justify-content: space-evenly;
+    transition: all 1s;
 }
 
+/* COMIENZO DE ANIMACIONES/TRANSICIONES */
+
+
+.logo:hover{
+    transform: skew(15deg);
+    height: 30px;
+    width: 30px;
+    border: 2px solid olivedrab;
+}
+
+.animate__heartBeat{
+    animation-delay: 3s;
+    animation-duration: 5s;
+    animation-timing-function: ease-in;
+}
+
+/* -------------------------------- */
 .user__options{
     position:absolute;
     top: 20px;
